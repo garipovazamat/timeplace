@@ -1,0 +1,1229 @@
+@import "bourbon/bourbon"
+
+@import "vars.sass"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #fff
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #eee
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+.hidden
+	display: none
+a
+	color: #FFF
+	text-decoration: none	
+	&:hover
+		text-decoration: none
+		color: #fff
+	&:visited
+		text-decoration: none
+		color: #fff
+	&:focus
+		text-decoration: none
+		color: #fff				
+.h
+	font-weight: normal
+b, strong
+	font-family: "RobotoBold", sans-serif	
+.main-h1
+	@extend .h
+	font-family: "RalewayExtraBold", sans-serif
+	font-size: 72px
+	color: #fff
+.off-uzer
+	border-radius: 50%
+	background-color: #fff
+	width: 5px
+	height: 5px
+	display: block
+	position: absolute
+.on-uzer
+	background-color: #a2d80f
+.btn
+	display: block
+	font-family: "RobotoMedium", sans-serif
+	text-align: center
+	color: #949191
+.tabs_btn
+	@extend .btn
+	width: 100%
+	background-color: transparent
+	border-bottom: 2px solid transparent
+	font-size: 12px
+	padding: 7px 0	
+.green_btn
+	background-color: $main-color
+	border-bottom: 2px solid darken($main-color, 10%)
+	color: #fff
+	&:hover
+		background-color: darken($main-color, 10%)	
+		border-bottom: 2px solid darken($main-color, 20%)							
+.red_btn
+	background-color: $acent-color
+	border-bottom: 2px solid darken($acent-color, 10%)
+	color: #fff
+	&:hover
+		background-color: darken($acent-color, 10%)	
+		border-bottom: 2px solid darken($acent-color, 20%)							
+.grey_btn
+	background-color: #eee
+	border-bottom: 2px solid darken(#eee, 10%)
+	color: #949191
+	&:hover
+		background-color: darken(#eee, 10%)	
+		border-bottom: 2px solid darken(#eee, 20%)	
+.btn-popup
+	background: $acent-color
+	border: 0
+	border-bottom: 5px solid darken($acent-color, 10%)
+	display: block
+	margin: 20px auto 30px
+	width: 100%
+	padding: 15px 0
+	font-size: 24px
+	font-family: "RobotoBold", sans-serif
+	text-transform: uppercase
+	color: #fff
+	&:hover
+		background: darken($acent-color, 10%)
+		border-bottom: 5px solid darken($acent-color, 20%)	
+.menu-aftor
+	list-style-type: none
+	background: $grey
+	padding: 0
+	margin: 0
+	.num-aftor
+		top: 16px
+		right: 10px	
+	a
+		background: $grey
+		display: block
+		position: relative
+		padding: 10px  0px 10px 40px
+		font-size: 18px
+		&:hover
+			background: $main-color
+	li
+		a
+			background-repeat: no-repeat
+			background-position: 11px 16px
+			&:hover
+				background-repeat: no-repeat
+				background-position: 11px 16px
+	li:first-child
+		a
+			background-image: url("../img/aftor-mnu1.png")
+	li:nth-child(2)
+		a
+			background-image: url("../img/aftor-mnu2.png")
+	li:nth-child(3)
+		a	
+			background-image: url("../img/aftor-mnu3.png")
+	li:nth-child(4)
+		a	
+			background-image: url("../img/aftor-mnu4.png")		
+	li:nth-child(5)
+		a
+			background-image: url("../img/aftor-mnu5.png")
+		border-bottom: 1px solid #4b4e50
+		padding-bottom: 10px
+	li:nth-child(6)
+		a
+			background-image: url("../img/aftor-mnu6.png")
+		padding-top: 10px
+		border-top: 1px solid #25292c
+	li:nth-child(7)
+		a
+			background-image: url("../img/aftor-mnu7.png")
+	.new-event
+		background: $acent-color
+		background-image: url("../img/aftor-mnu8.png")
+		padding: 15px  0px 15px 40px
+		background-repeat: no-repeat
+		background-position: 11px 21px
+		&:hover
+			background: darken($acent-color,10%)
+			background-image: url("../img/aftor-mnu8.png")
+			background-repeat: no-repeat
+			background-position: 11px 21px					
+h2
+	font-family: "RobotoLight", sans-serif
+	font-size: 36px
+	text-transform: uppercase
+	@extend .h
+h3,h4
+	font-family: "RobotoMedium", sans-serif
+	font-size: 24px
+	@extend .h
+h4
+	font-size: 20px
+.name-cat
+	display: block
+	background: #eee
+	border-radius: 30px
+	position: relative
+	color: #34393d
+	&:hover
+		text-decoration: none
+		background: $main-color
+		border-bottom: 5px solid darken($main-color, 10%)
+	&:active
+			background: darken($main-color, 10%)
+			border-bottom: 5px solid darken($main-color, 20%)	
+.form-search
+	position: relative
+	display: block
+	.search-word
+		margin: 0
+		width: auto
+		.input-search
+			text-align: left
+			font-size: 18px
+			border-radius: 30px
+			background-clip: padding-box
+			width: 100%
+			padding: 0 50px 0 25px
+			color: #34393d
+			height: 53px
+			border: none
+	.search-button
+		.btn-search
+			font-size: 0
+			background-repeat: no-repeat
+			background-color: transparent
+			filter: none
+			width: 18px
+			height: 18px
+			border: 0
+			box-shadow: none
+			padding: 0
+			margin: 0
+			text-shadow: none
+			position: absolute
+			top: 18px
+			right: 20px
+			background-image: url("../img/search.png")	
+.num-aftor
+	position: absolute
+	background: $acent-color
+	padding: 0px 5px 1px
+	line-height: 16px
+	font-size: 12px
+	font-family: "RobotoMedium", sans-serif
+	border-radius: 3px	
+.head-cat
+	position: relative
+	margin: auto
+	margin-top: 23px
+	width: 90%
+	text-align: center
+	&::before
+		content:''
+		background: $acent-color
+		display: block
+		height: 3px
+		width: 30%
+		top: 48%
+		left: 0
+		position: absolute
+	&:after
+		content:''
+		background: $acent-color
+		display: block
+		height: 3px
+		width: 30%
+		top: 48%
+		right: 0
+		position: absolute	
+
+/*-------------------Header-----------------*/
+.main-header
+	background-color: $grey
+	width: 100%
+	position: fixed
+	top: 0
+	padding: 15px 0
+	z-index: 999
+	min-width: 320px
+	.city
+		font-family: "RobotoLight", sans-serif
+		font-size: 22px
+		border-bottom: 1px dashed #fff
+		margin-left: 25px
+		&:hover
+			border-bottom: none
+	.guest
+		text-transform: uppercase
+		text-decoration: none
+		float: right
+		a
+			font-size: 18px
+			line-height: 57px
+			&:hover
+				text-decoration: underline	
+		.reg
+			margin-right: 40px
+	.aftor
+		position: relative
+		.message,.aftor-avatar,.my-page,.aftor-mnu
+			float: right
+		.message
+			margin-right: 20px
+			margin-top: 16px
+			a
+				width: 28px
+				height: 28px
+				display: block
+				position: relative
+				background-image: url("../img/message-aftor.png")
+				background-repeat: no-repeat
+				background-size: 100%
+			span
+				right: -10px
+				top: -10px	
+		.aftor-avatar
+			width: 46px
+			height: 46px
+			border: 1px solid #fff
+			border-radius: 50%
+			overflow: hidden
+			display: inline-block
+			margin-right: 15px
+			margin-top: 5px			
+			img
+				max-width: 46px
+				max-height: 46px
+		.my-page
+			font-size: 18px
+			margin-right: 10px
+			margin-top: 12px
+		.aftor-mnu
+			position: relative
+			right: 0
+	.menu-aftor
+		position: absolute
+		display: none
+		top: 72px
+		right: 0
+		width: 307px
+		min-width: 291px
+		.num-aftor
+			top: 16px
+			right: 10px						
+
+// -------- выпадающее меню -------------
+.toggle-menu
+	display: block
+	width: 28px
+	height: 24px
+	margin: 15px auto 0px
+	padding: 12px 0 0 0
+	
+.toggle-menu span:after,
+.toggle-menu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+.toggle-menu span:after
+	top: 9px
+
+.toggle-menu span 
+	position: relative
+	display: block
+
+.toggle-menu span,
+.toggle-menu span:after,
+.toggle-menu span:before 
+	width: 100%
+	height: 3px
+	background-color: #fff
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+/* on activation */
+.toggle-menu.on span 
+	background-color: transparent
+
+.toggle-menu.on span:before 
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-menu.on span:after 
+	transform: rotate(-45deg) translate(7px, -8px)
+// -------- end выпадающее меню ------------- 					
+
+/*---------------slider-----------------------*/			
+.slider,
+	padding-top: 87px
+	width: 100%
+	position: relative
+	.next_button, .prev_button
+		position: absolute
+		top: 50%
+		z-index: 11
+		cursor: pointer
+	.prev_button
+		left: 40px
+	.next_button
+		right: 40px	
+	.slide
+		.item
+			img
+				display: block
+				width: 100%
+				height: auto
+/*-------------------------Block-TimePlace---------------------*/
+.block-TimePlace
+	position: absolute
+	top: 20%
+	z-index: 10
+	text-align: center
+	width: 100%
+	h1
+		margin: 0
+	h3
+		color: #fff
+		font-size: 22px
+		font-family: "RobotoBold", sans-serif
+		margin: 0
+		margin-top: -13px
+	.button-top
+		list-style-type: none
+		padding: 0
+		margin-top: 37px	
+		a
+			color: #fff
+			line-height: 71px
+			background-color: $acent-color
+			width: 234px
+			display: block
+			text-decoration: none
+			font-size: 22px
+			font-family: "RobotoMedium", sans-serif
+			border-bottom: 4px solid #df5a26
+			&:active
+				background-color: darken($acent-color,10%)
+				border-bottom: 4px solid darken(#df5a26,10%)
+		li
+			display: inline-block
+		li+li
+			margin-left: 23px
+		li:nth-child(2)
+			a
+				border-bottom: 4px solid #12ad83
+				background-color: $main-color			
+				&:active
+					background-color: darken($main-color,10%)
+					border-bottom: 4px solid darken(#12ad83,10%)
+	.form-search
+		max-width: 745px
+		margin: 0 auto
+		margin-top: 26px
+		.search-word
+			.input-search
+				border: 8px solid rgba(255,255,255,0.4)
+				box-shadow: 0 0 0 1px rgba(255,255,255,0.7)
+				background-clip: padding-box
+				width: 100%
+				padding: 0 50px 0 25px
+				color: #34393d
+				height: 53px
+		.search-button
+			.btn-search
+				background-image: url("../img/search.png")
+	.question
+		margin-top: 35px
+		text-align: center
+		a
+		img
+			transition: all .5s ease-in-out
+			&:hover
+				transform:rotateY(180deg)
+//--------------------categories-------------------------//
+.categories
+	background: #fff
+	text-align: center
+	z-index: 10
+	display: block
+	position: relative
+	.cat
+		position: absolute
+		width: 100%
+		height: 60px
+		top: -60px
+		background-color: transparent
+		z-index: 10
+		.wrap-cat
+			background: #fff
+			border: 5px solid rgba(255,255,255,0.4)
+			border-bottom: none
+			background-clip: padding-box
+			height: 100%
+			padding: 0
+			position: relative
+			box-shadow: 0 0 0 2px rgba(255,255,255,0.7)
+	h2
+		@extend .head-cat				
+	.wrap-categories
+		background: #fff
+		position: relative
+		padding-top: 100px
+	.item-cat
+		margin-bottom: 20px
+		height: 250px
+		.circle1
+			background: #22a5a5
+			background-image: url("../img/cat1.png")
+			background-repeat: no-repeat
+			background-position: 50%
+		.circle2
+			background: #7f6096
+			background-image: url("../img/cat2.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle3
+			background: #cb8737
+			background-image: url("../img/cat3.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle4
+			background: #eb792c
+			background-image: url("../img/cat4.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle5
+			background: #c5dfa5
+			background-image: url("../img/cat5.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle6
+			background: #e3e685
+			background-image: url("../img/cat6.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle7
+			background: #78ccd5
+			background-image: url("../img/cat7.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle8
+			background: #f4dc5e
+			background-image: url("../img/cat8.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle9
+			background: #e59189
+			background-image: url("../img/cat9.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle10
+			background: #e4b56a
+			background-image: url("../img/cat10.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle11
+			background: #56a1d9
+			background-image: url("../img/cat11.png")
+			background-repeat: no-repeat
+			background-position: 50%			
+		.circle12
+			background: #fbd8db
+			background-image: url("../img/cat12.png")
+			background-repeat: no-repeat
+			background-position: 50%																																				
+		.circle
+			width: 105px
+			height: 105px
+			border-radius: 50%
+			margin: auto
+		.name-cat
+			max-width: 165px
+			margin: auto
+			margin-top: 20px
+			color: #34393d
+			padding: 15px 0
+			&::before
+				content:''
+				@include triangle(25px, #eee, up)
+				position: absolute
+				top: -9px
+				display: block
+				left: 43%
+			&:hover
+				padding: 14px 0
+			&:hover::before
+				@include triangle(25px, $main-color, up)
+			&:active
+					padding: 15px 0
+			&:active::before
+				@include triangle(25px, darken($main-color, 10%), up)
+			&:visited
+				text-decoration: none
+			&:focus
+				text-decoration: none				
+			h4
+				padding: 0
+				margin: 0
+/*-------------------square-cat категории и подкатегории в квадрате------------------------*/	
+.square-cat
+	text-align: left
+	.wrap-item-sq-cat
+		padding-left: 5px
+		padding-right: 5px
+		padding-bottom: 10px
+	ul
+		list-style-type: none
+		margin: 15px 0 0 15px
+		padding: 0
+		li
+			padding: 0
+		li+li
+			margin-top: 5px
+		a
+			display: inline-block
+			line-height: 30px
+			padding: 0 10px	
+	h3
+		font-size: 20px
+		color: #fff
+		margin: 0
+		padding: 0
+		line-height: 66px
+		a
+			width: 100%
+			display: block
+			padding: 0
+			padding-left: 20px
+			background: $main-color
+	a
+		color: #fff
+		text-decoration: none	
+		background-color: $grey
+		&:hover
+			background-color: $acent-color
+	.item-sq-cat
+		background-color: #eee
+		height: 280px
+		background-repeat: no-repeat
+		background-position: 50% 66px
+		background-size: 100%
+	.item-sq-cat1
+		background-image: url("../img/square1.png")
+		background-size: 140%
+	.item-sq-cat2
+		background-image: url("../img/square2.png")
+		background-size: 138%
+	.item-sq-cat3
+		background-image: url("../img/square3.png")
+	.item-sq-cat4
+		background-image: url("../img/square4.png")
+	.item-sq-cat5
+		background-image: url("../img/square5.png")
+		background-size: 168%
+	.item-sq-cat6
+		background-image: url("../img/square6.png")
+		background-size: 177%
+	.item-sq-cat7
+		background-image: url("../img/square7.png")
+		background-size: 125%
+	.item-sq-cat8
+		background-image: url("../img/square8.png")
+		background-position: center 50%
+	.item-sq-cat9
+		background-image: url("../img/square9.png")
+		background-size: cover
+	.item-sq-cat10
+		background-image: url("../img/square10.png")
+		background-size: cover
+	.item-sq-cat11
+		background-image: url("../img/square11.png")
+		background-size: 145%
+	.item-sq-cat12
+		background-image: url("../img/square12.png")
+		background-position: center 20%																						
+/*----------------------------event------------------------------------*/
+.event-wrap
+	h2
+		@extend .head-cat
+		margin-bottom: 50px
+	.event-form
+		margin-bottom: 50px				
+		.til, .for
+			position: relative
+			padding-left: 30px
+			margin-bottom: 10px
+			list-style-type: none
+			&>li
+				display: inline-block
+			&>li+li
+				margin-left: 10px
+		span
+			width: 20px
+			display: block
+			float: left
+			line-height: 42px
+		.jq-selectbox
+			ul
+				max-height: 250px
+				li
+					font-family: "RobotoLight", sans-serif
+					font-size: 14px
+					&:hover
+						background: lighten($grey, 10%)			
+		.jq-selectbox__select
+			border-radius: 0
+			border: 1px solid #dedede
+			background: #fff
+			box-shadow: none
+			height: 42px
+			padding-right: 76px
+		.jq-selectbox__trigger
+			width: 55px
+		.jq-selectbox__trigger-arrow
+			top: 16px
+			left: 20px
+			border-top: 8px solid #999
+			border-right: 8px solid transparent
+			border-left: 8px solid transparent
+		.jq-selectbox__select-text
+			line-height: 42px
+			font-family: "RobotoLight", sans-serif
+			font-size: 16px				
+	.ev-grid
+		list-style-type: none
+		padding: 0
+		.ev-grid-li
+			float: none
+			vertical-align: top
+			display: inline-block
+			width: 33.16%
+		.event
+			display: block
+			border-bottom: 1px #c2c2c2 solid
+			padding-bottom: 25px
+			margin-bottom: 40px
+			min-height: 460px
+			position: relative
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				li>a
+					display: block
+		.event-img
+			height: auto
+			width: 100%
+			margin: auto
+			position: relative
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+			a
+				&::before
+					content:''
+					position: absolute
+					top: 0
+					left: 0
+					display: block
+					width: 100%
+					height: 100%
+					opacity: 0
+					background: $acent-color
+				&:hover::before
+					opacity: 0.7
+		h4
+			font-size: 18px
+			font-family: "RobotoBold", sans-serif
+			color: $grey
+			margin: 14px 0
+			a
+				color: $grey
+				&:hover
+					color: $acent-color
+		p
+			font-size: 14px
+			font-family: "RobotoLight", sans-serif
+			color: $grey			
+		.event-uzer
+			font-size: 12px
+			font-family: "RobotoMedium", sans-serif
+			li+li
+				margin-left: 10px
+			li
+				display: inline-block
+				position: relative
+				a
+					color: #b4b3b3
+					padding: 7px 10px
+					&:hover
+						color: $acent-color
+			.people
+				color: #b4b3b3
+				border-left: 1px #c2c2c2 solid
+				padding: 7px 0px 7px 30px
+				position: relative
+				&:before
+					content: url("../img/event-people.png")
+					position: absolute
+					display: block
+					left: 10px
+					top: 6px			
+			.event-uzer-cat
+				color: #fff
+				background: $main-color
+				&:hover
+					background: $acent-color
+					color: #fff		
+			.off-uzer
+				left: 0
+				top: 15px				
+		.date
+			width: 100%
+			font-size: 14px
+			font-family: "RobotoBold", sans-serif
+			li
+				position: relative
+				padding-left: 30px
+				&:before
+					content:''
+					position: absolute
+					top: 2px
+					left: 0				
+			li:first-child
+				&:before
+					content: url("../img/event-clock.png")
+			li:last-child
+				&:before
+					content: url("../img/event-location.png")
+					left: 2px
+/*---------------------------footer(main-footer)-------------------------------*/
+footer
+	.right-footer
+		text-align: right
+	p
+		margin: 0
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+			a
+				&:hover
+					text-decoration: none
+					border-bottom: none					
+.main-footer
+	background-color: $grey
+	padding: 15px 0
+	font-family: "RobotoMedium", sans-serif
+	font-size: 14px
+	.right-footer
+		p
+			margin-top: 9px
+			a
+				color: #4ea8a1
+				&:hover
+					text-decoration: none
+					color: darken(#4ea8a1, 10%)			
+	p
+		color: #b4b3b3
+		display: inline-block
+		padding-left: 20px
+	ul
+		margin-top: 9px
+		li+li
+			margin-left: 10px
+		li
+			display: inline-block
+			a
+				color: #efeeee
+				border-bottom: 1px solid	#efeeee	
+/*-----------------подсказка---------------------------*/	
+.head-help, .wrap-popup
+	min-width: 290px
+	max-width: 700px
+	background-color: #fff
+	margin: 100px auto 0
+	position: relative
+	border-bottom: 5px solid darken($main-color, 10%)
+	.content-center
+		text-align: center
+		p
+			font-size: 18px
+	.content
+		padding: 10px 30px
+		position: relative
+		top: -60px
+		color: #2f2727
+		span 
+			color: $main-color
+			font-family: "RobotoBold", sans-serif
+		p
+			margin: 20px 0	
+	h4
+		font-family: "RobotoRegular", sans-serif
+		font-size: 18px
+		margin: 20px 0
+	h3
+		font-size: 30px
+		color: #fff
+		font-family: "RobotoBold", sans-serif
+		background-color: $main-color
+		position: relative
+		top: -75px
+		margin: 0
+		margin-right: 75px
+		line-height: 70px
+		padding-left: 30px
+	.wrap-popup-btn
+		max-width: 300px
+		margin: auto					
+/*-------------------формы-----------------------------*/
+.head-form
+	min-width: 290px
+	max-width: 505px
+	background-color: #fff
+	margin: 100px auto 0
+	position: relative
+	border-bottom: 5px solid darken($main-color, 10%)
+	a
+		display: block
+		margin: 10px 0
+		color: #404850
+		text-decoration: none
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+		img
+			margin-right: 10px			
+	.vk-a
+		&::before
+			content: url("../img/vk.png")
+	.fb-a
+		&::before
+			content: url("../img/vk.png")			
+	h3
+		font-size: 30px
+		color: #fff
+		font-family: "RobotoBold", sans-serif
+		background-color: $main-color
+		position: relative
+		top: -75px
+		margin: 0
+		margin-right: 75px
+		line-height: 70px
+		padding-left: 30px
+	fieldset
+		position: relative
+		top: -50px
+		display: block
+		width: 80%
+		margin: 20px auto
+		padding: 0
+		border: 0	
+	.select-wrap
+		margin-bottom: 10px
+		color: $grey
+		label
+			display: block
+			font-size: 14px
+			font-family: "RobotoMedium", sans-serif
+	.login-label
+		position: relative
+	input[type="text"]
+		display: block
+		width: 100%
+		border: none
+		background: $grey
+		color: #fff
+		margin-bottom: 10px
+		line-height: 65px
+		padding-left: 10px
+		padding-right: 10px
+	.btn-form
+		background: $acent-color
+		border: 0
+		border-bottom: 5px solid darken($acent-color, 10%)
+		display: block
+		margin: 20px auto 30px
+		width: 100%
+		padding: 15px 0
+		font-size: 24px
+		font-family: "RobotoBold", sans-serif
+		text-transform: uppercase
+		color: #fff
+		&:hover
+			background: darken($acent-color, 10%)
+			border-bottom: 5px solid darken($acent-color, 20%)
+	.btn-recovery	
+		background: $main-color
+		border: 0
+		border-bottom: 5px solid darken($main-color, 10%)
+		display: block
+		margin: 20px 0
+		width: 150px
+		padding: 10px 0
+		font-size: 20px
+		&:hover
+			background: darken($main-color, 10%)
+			border-bottom: 5px solid darken($main-color, 20%)	
+	.activ-box
+		color: #25d3a4
+		cursor: pointer
+		margin-bottom: 0		
+	.hid-box
+		color: #404850
+		display: none
+		p
+			margin: 0
+			margin-bottom: 5px	
+/**---------------**/
+.head-form
+	.jq-checkbox.checked .jq-checkbox__div
+		width: 25px
+		height: 25px
+		margin: 0
+		border-radius: 0
+		box-shadow: none
+		background: $grey
+		background-image: url("../img/arrow.png")
+		background-position: 5px center
+		background-repeat: no-repeat
+	.jq-checkbox
+		width: 25px
+		height: 25px
+		border: none
+		border-radius: 0
+		background: lighten($grey, 60%)
+		box-shadow: none
+		outline: none
+		float: left
+	.jq-selectbox
+		width: 100%
+		&:hover .jq-selectbox__trigger-arrow
+			border-top: 8px solid #959595
+			border-right: 8px solid transparent
+			border-left: 8px solid transparent		
+		.jq-selectbox__select
+			background: $grey
+			border: 0
+			border-radius: 0
+			box-shadow: none
+			text-shadow: none
+			color: #fff
+			position: relative
+			height: 65px
+			&:active
+				border: none
+				box-shadow: none
+		.jq-selectbox__select-text
+			line-height: 65px
+		.jq-selectbox__trigger
+			border-left: 1px solid #585f66
+			width: 65px  
+			&::before
+				content:''
+				display: block
+				height: 100%
+				border-left: 1px solid #262f38
+		.jq-selectbox__trigger-arrow
+			top: 28px
+			right: 24px
+			border-top: 8px solid #959595
+			border-right: 8px solid transparent
+			border-left: 8px solid transparent
+			:hover
+				border-top: 20px solid #959595
+				border-right: 20px solid transparent
+				border-left: 20px solid transparent				
+		.jq-selectbox__dropdown
+			width: 100%
+			background: $grey
+		ul
+			max-height: 250px
+			li
+				color: #fff
+				&:hover
+					background: lighten($grey, 10%)
+		.jq-selectbox__search 
+			input
+				color: #443f3f
+				box-shadow: none
+				border-radius: 0
+				background: #A3ABB1
+				line-height: 30px
+.search-people-form
+	@extend .head-form
+	min-width: 100%
+	margin: 0 auto
+	border-bottom: none
+	.jq-selectbox
+		ul
+			li+li
+				border: none
+			li
+				color: #9a9999
+				&:hover
+					background: #A3ABB1
+					color: #eee	
+			.selected
+				color: #eee		
+		.jq-selectbox__select
+			background: #eee
+			color: #9a9999
+			height: 38px
+		.jq-selectbox__select-text
+			line-height: 38px
+			color: #404850
+		.jq-selectbox__trigger
+			width: 45px
+			border-left: 1px solid #fbfafa
+			&::before
+				border-left: 1px solid #e4e4e4
+		.jq-selectbox__trigger-arrow
+			top: 16px
+			right: 15px
+		.jq-selectbox__dropdown
+			background: #eee
+		.jq-selectbox__search
+			input
+				line-height: 20px
+				color: #1e1818
+	.wrap-two-select
+		.jq-selectbox
+			width: 40%
+			.jq-selectbox__select
+		& > div:first-child
+			float: left
+		& > div:nth-child(2)
+			float: right
+			position: relative
+		.center-two-select	
+			text-align: center
+			width: 20%
+			margin: 0 40%
+			span
+				font-size: 26px
+.radio
+	border-radius: 0
+	border: none
+	background: #eee
+	width: 23px
+	height: 23px
+	box-shadow: none
+.jq-radio.checked .jq-radio__div
+	width: 100%
+	height: 100%
+	border-radius: 0
+	background: $grey
+	box-shadow: none
+	margin: 0
+	background-image: url("../img/arrow.png")
+	background-repeat: no-repeat
+	background-position: center
+.radio.focused
+	border: none
+
+
+/*----------------------pop-up-------------------------*/	
+.mfp-forms
+	.mfp-close
+		background-color: $acent-color
+		opacity: 1
+		width: 70px
+		height: 70px
+		line-height: 70px
+		color: #fff	
+		top: -75px
+		&:hover
+			background-color: darken($acent-color, 10%)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.25s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all 0.25s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0		
+.calendar_wrap,.TimePicker_wrap	
+	position: relative
+	.calendar, .TimePicker
+		position: absolute
+		right: 0
+		top: 0
+		cursor: pointer
+		width: 45px
+		height: 100%
+		border-left: 1px solid #fbfafa
+		&::after
+			content: url("../img/calendar.png")
+			position: absolute
+			top: 8px
+			right: 13px
+		&::before
+			content: ''
+			display: block
+			height: 100%
+			border-left: 1px solid #e4e4e4
+	.TimePicker
+		&::after
+			content: url("../img/timepicker.png")
+			top: 9px
+			right: 12px								
+@import "wrapper.sass"			
+
+
+
+
+
+
+

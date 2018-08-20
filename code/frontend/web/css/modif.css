@@ -1,0 +1,104 @@
+.profile-setup form input[type="text"]{
+    padding: 0px 10px;
+}
+
+#user-date_born{
+    margin-bottom: 0;
+}
+.modif_country{
+    width: 200px;
+}
+.del_page.btn.grey_btn.open-popup{
+    margin: 0;
+}
+.datetime_filter{
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+.wrap-poisk-category ul{
+    padding-top: 10px;
+}
+
+.btn, .tabs_btn{
+    color: #FFFFFF;
+}
+#event-datetime, #event-datetime_to{
+    margin-bottom: 0px;
+    line-height: 31px;
+}
+
+.input-group-btn:last-child > .btn{
+    width: 50px;
+}
+.error-summary{
+    color: red;
+}
+.create_message{
+    text-align: center;
+    margin-top: 80px;
+    width: 100%;
+    max-width: 500px;
+}
+.create_message .form-group{
+    margin: 10px;
+}
+.create_message textarea{
+    width: 100%;
+}
+.mysubmit{
+    color: #000000;
+    background: #fc7642;
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+}
+.mysubmit:hover{
+    background: #cd6436;
+}
+#map{
+    height: 80vh;
+}
+.short-description a{
+    color: #000055;
+}
+.form-group.field-event-datetime.required{
+    margin-top: 50px;
+}
+.edit-uzer.search-people-form>h5{
+    margin-top: 30px;
+}
+#city_choose_chosen, #city_reg_chosen{
+    width: 404px;
+}
+#city_choose_chosen a, #city_reg_chosen a{
+    height: 40px;
+    background: #34393d;
+    color: #ffffff;
+    border-radius: 0;
+}
+#city_choose_chosen div b, #city_reg_chosen div b, #city_event_chosen div b{
+    background-position-y:  7px;
+}
+#city_event_chosen{
+    width: 100%;
+}
+#city_event_chosen a{
+    height: 40px;
+    background: #eee;
+    color: #000000;
+    border-radius: 0;
+    border-color: #eee;
+}
+.head-cat::before, .categories h2::before, .event-wrap h2::before{
+    width: 15%;
+}
+.head-cat:after, .categories h2:after, .event-wrap h2:after{
+    width: 15%;
+}
+.name-uzer a{
+    color: #000000;
+}
+input:focus{
+    outline: none;
+}

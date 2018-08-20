@@ -1,0 +1,369 @@
+.onesubcat{
+    background: #dff0d8;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.onesubcat:hover{
+    background: #ccddc5;
+}
+.user_block{
+    font-size: 14px;
+}
+.user_photo{
+    width: 300px;
+}
+.photo_block{
+    float: left;
+    margin-right: 40px;
+    width: 300px;
+}
+.desc_block{
+    float: left;
+    max-width: 540px;
+}
+.user_name{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.desc_block .online, .desc_block .offline{
+    margin-bottom: 20px;
+    color: #696969;
+}
+.participation{
+    padding-top: 30px;
+    clear: both;
+    font-size: 16px;
+    font-weight: bold;
+}
+.about_self{
+    margin-bottom: 20px;
+}
+.friends_buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+.edit_block{
+    width: 500px;
+    margin: 0 auto;
+}
+.event_pictures{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.event-update{
+    width: 700px;
+    margin: 0 auto;
+}
+.event_pictures_update{
+    width: 400px;
+}
+.event_image img{
+    width: 300px;
+    height: 210px;
+}
+.event_image{
+    display: inline-block;
+    margin: 10px;
+}
+.event_comments{
+    margin: 0 auto;
+    width: 700px;
+}
+.comment_title{
+    text-align: center;
+    font-weight: bold;
+}
+.organizator .name{
+    padding-top: 12px;
+}
+.one_comment{
+    min-height: 50px;
+    margin: 10px;
+}
+.comment_photo{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.comment_time{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.text_block{
+    margin-left: 60px;
+}
+.member_name{
+    height: 40px;
+}
+.one_member{
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 78px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.members_head{
+    font-weight: bold;
+    margin: 10px;
+}
+.organizator{
+    margin-left: 23px;
+}
+.organizator .comment_photo{
+    float: none;
+    margin-right: 0px;
+}
+.one_event{
+    margin: 5px;
+    vertical-align: top;
+    max-width: 530px;
+}
+.one_event img{
+    display: inline-block;
+}
+.one_event a{
+    color: #000000;
+}
+.one_event a:hover{
+    color: #292929;
+    text-decoration: none;
+}
+
+.event-create{
+    width: 700px;
+    margin: 0 auto;
+}
+.searchuser_block{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.user_search_button{
+    clear: both;
+    margin-bottom: 20px;
+}
+.summary{
+    margin-bottom: 10px;
+}
+.message_write{
+    width: 600px;
+    margin: 0 auto;
+}
+.message_time{
+    font-size: 12px;
+}
+.users_mess td{
+    padding-top: 10px;
+}
+.category_list li{
+    
+    color: #FFFFFF;
+}
+.category_list:hover{
+    opacity: 1;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    height: 600px;
+    margin: 0 auto;
+}
+#map{
+    height: 500px;
+    width: 100%;
+}
+.user_delete{
+    height: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 180px;
+}
+.online{
+    color: #049915;
+}
+.offline{
+    color: #807f7f;
+}
+.poisk{
+    width: 400px;
+    margin: 0 auto;
+}
+.onecat_with_micro{
+    display: inline-block;
+    width: 233px;
+}
+.category_with_micro{
+    margin: 0 auto;
+    width: 1181px;
+    margin-bottom: 10px;
+}
+
+.last_events{
+    font-weight: normal;
+    width: 1180px;
+    margin: 0 auto;
+}
+.last_events>.last_title{
+    font-size: 16px;
+    font-weight: bold;
+    clear: both;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.wrap > .container{
+    padding-bottom: 72px;
+}
+body{
+    background: #909090;
+}
+.category_with_micro a{
+    color: #000000;
+}
+.category_with_micro a:hover{
+    color: rgb(35, 255, 54);
+    text-decoration: none;
+    background: none;
+}
+.layout_cloud a{
+    color: #ffffff;
+}
+.row{
+    margin-left: 0px;
+}
+.breadcrumb{
+    margin-right: 18px;
+    margin-bottom: 14px;
+}
+a .main_cats_item{
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+a .main_cats_item:hover{
+    background-color: rgba(158, 156, 156, 0.7);
+}
+.choose_city_module{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.choose_city_button{
+    margin: 0 auto;
+}
+.name_cat_main{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    margin-top: 20px;
+    color: #ffffff;
+}
+.slides-control a:hover{
+    background: none;
+}
+.more_title{
+    float: left;
+    font-weight: bold;
+}
+.social_links{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#mytimer{
+    height: 120px;
+    width: 345px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.myevents_title{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.myevents_block{
+    width: 300px;
+    margin: 0 auto;
+}
+.myevents_block a{
+    color: #000000;
+}
+.myevents_block a:hover{
+    color: #1e1e1e;
+}
+.mytimer_container{
+    text-align: center;
+}
+.message_photo{
+    display: inline-block;
+    vertical-align: top;
+}
+.message_photo img{
+    border-radius: 13px;
+}
+.message_text{
+    display: inline-block;
+    position: relative;
+}
+.one_message_block{
+    padding: 8px;
+}
+.one_message{
+    width: 473px;
+    background: #D7DAFF;
+    border-radius: 11px;
+    padding: 5px;
+}
+.create_message_button{
+    margin: 10px;
+}
+.about_style{
+    color: #002d66;
+}
+.about_style:hover{
+    color: #0041a2;
+}
+.navbar-brand{
+    padding: 0px 15px;
+}
+.create_message{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.table-striped>tbody>tr:nth-child(odd)>td,.table-striped>tbody>tr:nth-child(odd)>th{
+    background-color:#CECECE;
+}
+#main_carousel.item {
+    display: none;
+    position: relative;
+.transition(.300s ease-in-out left);
+}
+.advertising{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 1px #000000 solid;
+    width: 100%;
+    height: 200px;
+}
+.delete_message_button{
+    position: absolute;
+    right: 9px;
+    top: 5px;
+    color: #999999;
+}
+.datetime_filter{
+    width: 450px;
+}
+.invite_picture{
+    float: left;
+    margin-right: 10px;
+}

@@ -1,0 +1,399 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.event-wrap 
+		.ev-grid 
+			.ev-grid-li
+				width: 33%
+	/**/
+	.main-footer 
+		.right-footer 
+			p
+				float: none
+				padding: 0
+		p
+			float: none
+			margin: auto
+			text-align: center
+			display: block
+			padding: 0		
+		.logo
+			display: none
+	#wrapper
+		.layout-navbar
+			z-index: 0
+	.tablet-panel
+		display: block
+	.main_body,.footer_wrapper
+		margin-left: 0
+			
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.creat-event .load-img-wrap .load-img-item .load-img
+		height: 200px
+	.event-wrap 
+		.ev-grid 
+			.ev-grid-li
+				width: 49.6%
+		h2::before, h2::after
+			width: 24%					
+	.block-TimePlace
+		.button-top 
+			a
+				width: 198px
+	.square-cat
+		.item-sq-cat1
+			background-size: 100%
+			background-position: 50% 10%
+		.item-sq-cat2
+			background-size: 100%
+			background-position: 50% 50%
+		.item-sq-cat3
+			background-size: 100%
+			background-position: 50% 3%
+		.item-sq-cat4
+		.item-sq-cat5
+			background-size: 100%
+		.item-sq-cat6
+			background-size: 100%
+		.item-sq-cat7
+			background-size: 100%
+			background-position: 50% 1%
+		.item-sq-cat8
+			background-position: center 50%
+		.item-sq-cat9
+			background-size: cover
+		.item-sq-cat10
+			background-size: cover
+		.item-sq-cat11
+			background-size: 100%
+		.item-sq-cat12
+			background-size: 100%
+			background-position: center 20%	
+	.footer_wrapper
+		padding: 14px 15px 0
+		.logo
+			display: none
+		p
+			text-align: center
+		ul
+			margin: 4px 0
+	.main_section_main_body 
+		.advertising
+			display: none										
+	
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	.main_body 
+		header
+			.form-search
+				float: none	
+				.main_body
+			.right-head
+				text-align: left
+				.subscription
+					margin-left: 22px				
+	.main-header
+		.logo-city
+			text-align: left
+		.logo	
+			img
+				height: 30px
+				width: 30px				
+		.city
+			float: right
+			font-size: 14px
+		.guest
+			margin: auto
+			float: right
+			text-align: center
+			a
+				font-size: 16px
+				line-height: 50px
+		.aftor
+			margin-bottom: 0px
+			.message
+				a
+					width: 24px
+					height: 24px
+			.aftor-avatar
+				margin-right: 10px
+			.my-page
+				margin-right: 25px
+			.aftor-mnu
+				position: relative
+		.menu-aftor		
+			width: 100%
+			top: 65px					
+	.slider
+		padding-top: 110px
+	.event-wrap 
+		.ev-grid 
+			.ev-grid-li
+				width: 100%
+	.head-help
+		h3
+			font-size: 28px
+			padding-left: 15px								
+	.categories h2::before, .event-wrap h2::before,.categories h2::after, .event-wrap h2::after
+		width: 14%
+	.block-TimePlace
+		top: 21%
+		h1
+			font-size: 62px
+		h3
+			font-size: 20px	
+		.question
+			display: none	
+		.button-top 
+			a
+				width: 128px
+				font-size: 20px
+				line-height: 28px
+	.event-wrap
+		.event-form
+			.til, .for
+				&>li
+					display: block
+				&>li+li
+					margin-left: 0
+					margin-top: 10px
+@media only screen and (max-width : 630px)
+	.uzer-page
+		.tabs 
+			.tabs_controls 
+				.tabs_controls-item
+					font-size: 12px
+					padding: 0px
+					padding-left: 7px													
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.head-help
+		h3
+			font-size: 16px
+			padding-left: 10px
+	.categories h2::before, .event-wrap h2::before,.categories h2::after, .event-wrap h2::after
+		width: 0
+	.categories h2, .event-wrap h2
+		font-size: 30px
+		border-bottom: 3px solid #fc7642
+	.categories 
+		.cat
+			top: 0
+			position: relative
+	.slider
+		padding-top: 85px			
+	.block-TimePlace
+		top: 27%
+		h1
+			font-size: 40px
+		h3
+			font-size: 13px
+		.button-top
+			margin-top: 13px
+			a
+				height: 50px
+				width: 50px
+				background-size: 80%
+				background-repeat: no-repeat
+				background-position: center
+				span 
+					display: none
+			li:first-child
+				a
+					background-image: url("../img/icon1.png")
+			li:last-child
+				a	
+					background-image: url("../img/icon3.png")					
+			li:nth-child(2)
+				a
+					background-image: url("../img/icon2.png")
+	.square-cat
+		.item-sq-cat1
+			background-size: 137%
+			background-position: 50% 0%
+		.item-sq-cat2
+			background-size: 140%
+			background-position: 50% 50%
+		.item-sq-cat3
+			background-size: 140%
+			background-position: 50% 20px
+		.item-sq-cat4
+			background-size: 130%
+		.item-sq-cat5
+			background-size: 140%
+		.item-sq-cat6
+			background-size: 140%
+		.item-sq-cat7
+			background-size: 110%
+			background-position: 50% 49px
+		.item-sq-cat8
+			background-size: 145% 
+			background-position: 30% 50%
+		.item-sq-cat9
+			background-size: cover
+		.item-sq-cat10
+			background-size: cover
+		.item-sq-cat11
+			background-size: 110%
+		.item-sq-cat12
+			background-size: 115%
+			background-position: center 30px
+	.toggle-menu
+		margin-top: 0px		
+	.main-header
+		.logo
+			img
+				height: 30px
+				width: 30px	
+		.city
+			font-size: 14px						
+		.aftor
+			.message
+				margin-right: 13px
+				margin-top: 0px
+				a
+					width: 24px
+					height: 24px
+			.aftor-avatar
+				margin-right: 10px
+				display: none
+			.my-page
+				margin-right: 25px
+				font-size: 16px
+				margin-top: 0px
+			.aftor-mnu
+				position: relative
+		.menu-aftor		
+			width: 100%
+			top: 40px
+		.guest
+			a
+				font-size: 14px
+				line-height: 25px
+	.tabs 
+		.tabs_controls 
+			.tabs_controls-item, .active
+				width: 100%
+				float: none
+	.tabs_content 
+		.tabs_item 
+			.right_tabs_item
+				float: none
+				margin-top: 5px
+				.date, .time
+					display: inline
+					font-size: 12px
+				span+span
+					margin-left: 5px	
+			.center_tabs_item
+				float: none
+				margin: 0
+				padding-left: 75px
+	.main_section_main_body 
+		.my-message 
+			.link-message
+			.right_tabs_item
+				position: relative
+				right: 0
+				top: 0
+				text-align: left
+	.uzer-page, .event-list, .profile-setup
+		.tabs 
+			.tabs_controls 
+				.tabs_controls-item
+					width: 100%
+					font-size: 16px
+					padding: 0 9px
+		.tabs_item 
+			.event_tabs_item
+				float: none
+			.event-content_tabs_item
+				margin: 0
+				.date-tabs
+					li
+						display: block
+					li+li
+						margin: 0 																																																															
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.head-help
+		h3
+			font-size: 15px
+			padding-left: 11px
+	.head-form 
+		h3
+			font-size: 28px
+			padding-left: 15px
+		.btn-form
+			font-size: 20px
+	.slider .next_button, .slider .prev_button
+		display: none			
+	.block-TimePlace 
+		.button-top
+			margin-top: 15px
+		h3
+			font-size: 12px					
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+	//a
+	//	&:active
+	//		outline: none
+	//	&:hover
+	//		outline: none
+	//	&:focus
+	//		outline: none
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.event-wrap 
+		.ev-grid 
+			.ev-grid-li
+				width: 33.1%
+	#wrapper 
+		.open-sidebar
+			left: 0			
+	/**/
+
+

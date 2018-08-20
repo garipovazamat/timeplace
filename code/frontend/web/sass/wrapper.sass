@@ -1,0 +1,1210 @@
+html,body,.container
+	height: 100%
+.ul
+	list-style-type: none
+	padding: 0	
+.contacts-page
+	@extend .ul
+	font: 18px "RobotoMedium", sans-serif
+	span
+		color: $acent-color
+	li+li
+		margin-top: 5px	
+	li
+		position: relative
+		padding-left: 30px
+		&::before
+			content:''
+			position: absolute
+			left: 0
+	li:first-child
+		&::before
+			content: url("../img/mail-contact.png")
+	li:last-child
+		&::before
+			content: url("../img/phone-contact.png")
+			left: 2px
+/*----------------------табы---------------------*/	
+.tabs
+	.tabs_controls
+		@extend .ul
+		margin: 0
+		width: 100%
+		font-family: "RobotoMedium", sans-serif
+		.tabs_controls-item, .active
+			cursor: pointer
+			width: 50%
+			float: left
+			line-height: 54px
+			padding-left: 10px
+		.tabs_controls-item
+			background: #a7a8a9
+			color: #e7e7e7
+			font-size: 18px
+			&:hover
+				background: darken(#a7a8a9,10%)
+		.active
+			background: #525a60
+			font-family: "RobotoBold", sans-serif
+			color: #fff
+			line-height: 54px
+			&:hover
+				background: darken(#525a60,10%)
+	.wrap_tabs_content
+		display: none		
+.tabs_content
+	display: block
+	@extend .ul
+	margin: 0
+	li+li
+		border-top: 1px solid #d5d3d3
+	.active
+		display: block
+	.tabs_item
+		padding: 16px 0
+		padding-left: 7px
+		position: relative
+		.avatar_tabs_item
+			float: left
+			width: 68px
+			height: 68px
+			border-radius: 50%
+			background: #eee
+			overflow: hidden
+			img
+				max-width: 68px
+				max-height: 68px
+		.center_tabs_item
+			float: left
+			margin-left: 10px
+			min-height: 68px
+			.name-uzer
+				margin-top: 5px
+				position: relative
+				a
+					color: $grey
+					font-size: 16px
+					font-family: "RobotoMedium", sans-serif
+					position: relative
+					&:hover
+						color: $acent-color
+				div
+					color: $grey
+					font-size: 16px
+					font-family: "RobotoMedium", sans-serif
+					position: relative	
+					display: inline							
+				span
+					right: -10px
+					top: 10px
+				.uzer-city
+					display: block
+					font-size: 12px
+					color: #9f9f9f		
+		.right_tabs_item
+			float: right
+			width: 142px
+			.grey_btn
+				color: #949191
+			a+a
+				margin-top: 5px
+			.time, .date
+				color: #b8b8b8
+				font-family: "RobotoMedium", sans-serif
+				display: block
+/*---------------------------пагинтация--------------------------*/				
+.pagination
+	@extend .ul
+	color: #bbb
+	li:first-child, li:last-child
+		font-size: 18px
+	li+li
+		margin-left: 5px
+	li
+		display: inline-block
+	a
+		color: #bbb
+		&:hover
+			color: lighten(#bbb, 10%)
+	.active
+		border-radius: 3px
+		padding: 0 6px
+		background: $main-color
+		a
+			color: #fff
+	.number
+		border: 1px solid #bbb
+		border-radius: 3px
+		padding: 0 6px
+		&:hover
+			border: 1px solid lighten(#bbb, 10%)			
+	.disabled
+		a
+			cursor: not-allowed
+			color: lighten(#bbb, 10%)																
+#wrapper
+	width: 100%
+	margin: 0 auto
+	position: relative
+	height: 100%
+	&::before
+		content: ''
+		background-image: url("../img/wrapper.png")
+		position: fixed
+		top: 0
+		width: 100%
+		bottom: 0
+	.container
+		padding: 0
+	.open-sidebar
+		left: 250px																		
+	.layout-navbar  /*----------сайдбар слева(меню)----------*/
+		position: fixed
+		width: 250px
+		height: auto
+		top: 0
+		left: auto
+		bottom: 0
+		background-color: #eee
+		z-index: 300
+		background: $grey
+		color: #fff
+	.logo-city
+		padding-left: 11px
+		.city
+			font-size: 16px
+			border-bottom: 1px dashed #fff
+			margin-left: 10px
+			&:hover
+				border-bottom: none
+	.aftor
+		position: relative
+		padding-left: 11px
+		margin: 10px 0
+		.aftor-avatar,.my-page
+			float: left
+		.aftor-avatar
+			width: 40px
+			height: 40px
+			border: 1px solid #fff
+			border-radius: 50%
+			overflow: hidden
+			display: inline-block
+			margin-right: 15px
+			margin-top: 5px			
+			img
+				max-width: 40px
+				max-height: 40px
+		.my-page
+			font-size: 14px
+			margin-right: 10px
+			margin-top: 12px
+		.arow-mnu
+			position: relative
+			right: 0
+			width: 20px
+			height: 20px
+			float: right
+			margin-right: 10px
+			margin-top: 13px
+			span
+				position: relative
+				width: 20px
+				height: 20px
+				display: block			
+				&::before
+					content: url("../img/arow-mnu.png")
+					position: absolute
+					top: -2px
+					left: 3px
+			.down
+				&::before
+					transform: rotate(180deg)
+	.menu-aftor
+		.num-aftor
+			top: 12px
+		a
+			font-size: 14px
+		li
+			a
+				background-position: 13px 14px
+				&:hover
+					background-repeat: no-repeat
+					background-position: 13px 14px
+		li:nth-child(6)
+			padding-top: 3px
+		li:nth-child(5)
+			padding-bottom: 3px
+		.form-search
+			position: relative
+			display: block
+			margin: 4px 0
+			width: 222px
+			.search-word
+				margin: 0
+				margin-left: 11px 
+				width: 100%
+				.input-search
+					text-align: left
+					font-size: 14px
+					border-radius: 30px
+					background-clip: padding-box
+					background-color: #4b5359
+					width: 100%
+					padding: 0 37px 0 13px
+					color: #d8d6d6
+					height: 35px
+					border: none
+			.search-button
+				.btn-search
+					background-image: url("../img/grey-search.png")
+					top: 9px
+					right: 0px						
+	.new-event  
+		background: $acent-color
+		background-image: url("../img/aftor-mnu8.png")
+		padding: 15px  0px 15px 40px
+		background-repeat: no-repeat
+		background-position: 13px 19px
+		width: 100%
+		display: block
+		&:hover
+			background: darken($acent-color,10%)
+			background-image: url("../img/aftor-mnu8.png")
+			background-repeat: no-repeat
+			background-position: 13px 19px
+	.aside-category
+		padding: 11px 0 0px 11px
+		.name-cat
+			padding: 3px 10px 2px
+			font-size: 14px
+			margin: 0px 5px 9px 0px
+			display: inline-block
+			color: #34393d
+			border-bottom: 3px solid #eee
+			&:hover
+				border-bottom: 3px solid darken($main-color, 10%)
+				margin-bottom: 6px
+			&:active
+				background: darken($main-color, 10%)
+				border-bottom: 3px solid darken($main-color, 20%)
+
+/*------------------обертка правой части ------------*/						
+.main_body 
+	position: relative
+	margin-left: 250px
+	min-height: 100%
+	background-color: #fff
+	overflow: hidden
+	padding-bottom: 150px
+	min-height: 100%
+	header /*----------шапка ------------*/
+		background: #eee
+		position: relative
+		min-height: 83px
+		padding: 14px 15px
+		.right-head
+			margin-top: 6px
+			position: relative
+			text-align: right
+			.subscription
+				color: #929292
+				border-bottom: 1px dashed #929292
+				position: relative
+				&::before
+					content: url("../img/sub.png")
+					position: absolute
+					left: -22px
+					top: 2px
+				&:hover
+					color: darken(#929292, 10%)
+					border-bottom: 1px dashed darken(#929292, 10%)	
+		.left-head
+		.bread-crumbs
+			min-height: 17px
+			a
+				font-size: 14px
+				color: #919191
+				margin-right: 5px
+				&:hover
+					color: lighten(#919191,10%)
+				&::before
+					content: "<"
+					margin-right: 4px
+		h3
+			font-family: "RobotoBold", sans-serif
+			margin: 0
+			position: relative
+			display: inline
+			.off-uzer
+				right: -8px
+				top: 16px
+		.form-search
+			max-width: 355px
+			float: right
+			.search-word
+				.input-search			
+					border: 8px solid rgba(255,255,255,0.4)
+					box-shadow: 0 0 0 1px rgba(255,255,255,0.7)
+					background-clip: padding-box
+					height: 46px
+					font-size: 16px
+			.btn-search
+				top: 13px
+/*---------------------------------Меню на маленьких экранах-----------*/										
+.tablet-panel
+	display: none
+	position: relative
+	padding: 6px 0
+	background: $grey
+	.toggle-menu
+		position: absolute
+		left: 8px
+		margin: 0
+		top: 14px
+	.logo-city
+		margin-left: 35px
+/*--------------------------Подвал---------------------------*/						
+.footer_wrapper
+	margin-left: 250px
+	overflow: hidden
+	background-color: #eee
+	height: 100px
+	padding: 26px 15px 0
+	position: relative
+	margin-top: -100px
+	p
+		color: #b4b3b3
+		margin: 0
+		a
+			color: #4ea8a1
+			&:hover
+				color: darken(#4ea8a1,10%)
+	.logo
+		float: left
+		margin-right: 10px
+	ul
+		li
+		a
+			color: #818080
+			border-bottom: 1px solid #818080
+			font-family: "RobotoMedium", sans-serif
+			&:hover
+				border-bottom: none
+		li+li
+			margin-left: 5px
+.main_section_main_body
+	padding-top: 15px
+	.advertising
+		border: 1px solid #eee
+		height: 574px
+		width: 100%
+		text-align: center
+		padding-top: 15px
+		p
+			color: #eee
+			margin-top: 200px
+	.my-message
+		.tabs_item
+			padding: 0
+		.close-message
+			position: absolute
+			bottom: 10px
+			right: 10px
+			color: #b8b8b8
+			z-index: 10
+			width: 24px
+			height: 24px
+			text-align: center
+			font-size: 16px
+			line-height: 20px
+			&:hover
+				color: #878787	
+		.link-message
+			display: block
+			position: relative
+			padding: 16px 0
+			padding-left: 7px
+			&:hover
+				background-color: #eee
+		.short-description
+			p
+				margin: 0
+				color: $grey	
+		.num-aftor
+			left: 7px
+			top: 68px
+		.right_tabs_item
+			position: absolute
+			right: 10px
+			top: 16px
+			text-align: right
+		.center_tabs_item
+			float: none
+			margin-left: 80px
+			margin-right: 150px
+			p
+				color: $grey
+				line-height: 18px								
+		.new-message
+			.center_tabs_item
+				.name-uzer
+					div
+						color: $acent-color
+						font-family: "RobotoMedium", sans-serif
+				p
+					font-family: "RobotoMedium", sans-serif
+			.right_tabs_item
+				.time, .date
+					color: $acent-color
+/*-----------------------Страница пользователя---------------*/						
+.uzer-page, .event-list, .profile-setup
+	.tabs 
+		.tabs_controls 
+			.tabs_controls-item
+				width: 33.33333333%
+				font-size: 14px
+				padding: 0 9px
+	.wrap_tabs_content
+		& > a
+			padding: 15px
+			font-size: 20px
+			font-family: "RobotoBold", sans-serif
+			color: #fff
+	.tabs_item
+		background-color: #eee
+		padding-left: 15px
+		.event_tabs_item
+			width: 120px
+			height: 120px
+			float: left
+			img
+				width: 100%
+		.event-content_tabs_item
+			margin-left: 130px
+			.name-event_tabs
+				a
+					font: 14px "RobotoBold", sans-serif
+					color: $grey
+					&:hover
+						color: $acent-color
+			p
+				margin: 0
+				line-height: 18px
+				font-family: "RobotoLight"
+				font-size: 14px
+				color: $grey
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+			.button-event-tabs
+				li
+					border: none
+					display: inline-block
+					position: relative
+				li+li
+					margin-left: 20px	
+				.event-go
+					color: $main-color
+					padding-left: 25px
+					&::before
+						content: url("../img/event-go.png")
+						position: absolute
+						left: 0
+						top: 2px	
+				.event-not-go
+					padding-left: 15px						
+					a	
+						color: #888888
+						font-family: "RobotoBold", sans-serif
+						&::before
+							content: url("../img/close-not-go.png")
+							position: absolute
+							left: 0
+							top: 1px					
+						&:hover
+							color: darken(#888888, 10%)
+				.btn
+					display: inline-block
+					padding: 3px 10px	
+			.date-tabs
+				margin: 5px 0
+				li
+					display: inline-block
+					border: none
+					position: relative
+					padding-left: 20px
+					color: #9d9fa1
+					font-family: "RobotoBold", sans-serif
+					&::before
+						content:""
+						position: absolute
+						left: 0
+						top: 2px
+				li+li
+					margin-left: 30px
+				li:first-child::before
+					content: url("../img/clock-tabs.png")
+				li:last-child::before
+					content: url("../img/tabs-location.png")
+					left: 2px
+	.about_uzer-page
+		margin-top: 30px
+		margin-bottom: 30px
+		background: #eee
+		padding: 0 15px 15px
+		h4
+			display: block
+			background: $grey
+			margin: 0
+			color: #fff
+			font: 20px "RobotoBold", sans-serif
+			margin-left: -15px
+			margin-right: -15px
+			padding-left: 15px
+			line-height: 55px
+		ul
+			@extend .ul
+			margin: 0
+			margin-top: 15px
+			font-size: 16px
+			color: $grey
+		p
+			color: $grey
+			font-size: 16px		
+	.btn-uzer-page
+		margin-bottom: 10px
+		.btn
+			width: 215px
+			line-height: 60px
+			font-size: 18px
+			display: inline-block
+			border-bottom-width: 5px
+		.grey_btn
+			color: #949191
+	.uzer-page-img
+		position: relative
+		overflow: hidden
+		width: 100%
+		height: 400px
+		background-color: red
+		margin-bottom: 10px
+		img
+			width: 100%
+			height: auto
+		.vk
+			position: absolute
+			left: 15px
+			bottom: 15px
+			width: 55px
+			height: 55px
+			border-radius: 50%
+			background-color: rgba(255,255,255,.6)
+			background-image: url("../img/vk-my-page.png")
+			background-position: 10px center
+			background-repeat: no-repeat
+			&:hover
+				background-color: rgba(252,118,66,.6)
+/*-----------------------------Созданные события--------*/
+.event-list, .profile-setup 
+	.tabs_item
+		background-color: #fff
+		padding-left: 0px
+.profile-setup, .creat-event
+	.foto_uzer_wrap
+		margin: 25px 0 
+		border-bottom: 1px solid #d5d3d3
+		.foto_uzer
+			width: 100%
+			height: 400px
+			overflow: hidden
+			.foto_uzer-img
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center
+				width: 100%
+				height: 100%
+		.input-file
+			width: 215px
+			margin: 15px 0
+	.private_form
+		margin-top: 20px
+		label
+			margin-bottom: 10px
+	h5
+		font-family: "RobotoMedium", sans-serif
+		font-size: 14px
+		color: $grey
+		font-weight: normal
+		margin: 0
+	form
+		input[type="text"]
+			background: #eee
+			color: #404850
+			line-height: 38px
+		textarea
+			border: none
+			width: 100%
+			background: #eee
+			padding: 10px 10px
+	.form-search
+		margin: 20px 0 
+		.search-word 
+			.input-search
+				height: 35px
+				font-size: 16px
+		.search-button 
+			.btn-search
+				top: 9px
+	.gender, .date_OB
+		width: 225px		
+	.main-profile-setup
+		.tabs_content
+			li
+				border-top: none
+				border-bottom: none							
+	.tabs_content
+		li
+			border-top: none
+			border-bottom: 1px solid #d5d3d3
+		.tabs_item 
+			.right_tabs_item
+				width: 175px
+	.tabs_btn
+		&:hover
+			color: darken(#949191, 10%)
+	.red_btn, .green_btn
+		&:hover
+			color: #fff
+	.tabs 
+		.tabs_controls
+			li:nth-child(2)
+				background-color: #bcbcbc
+				&:hover
+					background-color: darken(#bcbcbc, 5%)
+			li.active:nth-child(2)
+				background-color: #525a60				
+	.grey_btn
+		&:hover
+			color:#949191
+.profile-setup		
+	.btn-uzer-page
+		button.btn
+			position: relative
+			padding-left: 24px
+			padding-right: 0
+			width: 280px
+			border-top: none
+			border-right: none
+			border-left: none
+			&::before
+				content: url("../img/galochka-button.png")
+				position: absolute
+				left: 29px
+//---------------------Страничка события-------------//
+.event-page
+	.comment-wrap
+		.comment-list
+			list-style-type: none
+			margin: 0
+			padding: 0
+			padding-bottom: 30px
+			li
+				padding-bottom: 20px
+				padding-top: 20px
+			li+li
+				border-top: 1px solid #d5d3d3
+			.uzer-avatar
+				float: left
+				width: 68px
+				height: 68px
+				overflow: hidden
+				border-radius: 50%
+				background: #eee
+				img
+					max-width: 68px
+					min-height: 68px
+			.bottom-comment
+				margin-top: 10px
+				.date-comment
+					float: left
+					color: #9d9fa1
+					font-size: 12px
+					margin-right: 10px
+				.answer-uzer
+					float: left
+					color: #525a60
+					font-size: 12px
+				.comment-reply
+					float: left
+					margin-left: 20px
+					.reply
+						color: $main-color
+						font-size: 12px
+						display: block
+						&:hover
+							color: darken($main-color,10%)		
+			.comment-uzer-wrap
+				margin-left: 75px
+				.name-uzer
+					a
+						font-family: "RobotoBold", sans-serif
+						font-size: 14px
+						color: $grey
+						position: relative
+						&:hover
+							color: $acent-color
+						span
+							right: -9px
+							top: 7px
+		h3
+			background: $grey
+			color: #fff
+			font-family: "RobotoMedium", sans-serif
+			font-size: 20px
+			font-weight: normal
+			line-height: 50px
+			padding-left: 15px
+			margin-bottom: 0
+	.share-event-wrap
+		margin-top: 15px
+		margin-bottom: 15px
+		.share-event
+			color: #929292
+		.ya-share2
+			float: right
+			.ya-share2__badge
+				border-radius: 30px
+	.event-map
+		width: 100%
+		height: 400px
+		background-color: $grey	
+	.description-event
+		p
+			line-height: 22px
+			color: $grey
+		h1, h2, h3, h4, h5, h6
+			font-family: "RobotoMedium", sans-serif
+			font-weight: normal
+			margin-top: 5px
+			margin-bottom: 5px
+		h1
+			font-size: 26px
+		h2
+			font-size: 24px
+		h3
+			font-size: 22px
+		h4
+			font-size: 20px
+		h5
+			font-size: 18px
+		h6
+			font-size: 16px
+.description_list		
+	margin: 20px 0
+	padding: 0
+	list-style-type: none
+	li:nth-child(1n)
+		.right_dl
+			background-color: #eee
+		.left_dl
+			color: #fff
+			background-color: $grey			
+	li:nth-child(2n)
+		.left_dl
+			color: $grey
+			background-color: #eee
+		.right_dl
+			background-color: #fff
+	li
+		display: block			
+	.right_dl
+		height: 100%
+		min-height: 45px
+		min-width: 178px
+		margin-left: 112px
+		padding-top: 10px
+		padding-left: 10px	
+	.left_dl
+		min-height: 45px
+		width: 112px
+		float: left
+		text-align: center
+		padding-top: 10px
+		span
+.slider-event
+	width: 100%
+	position: relative
+	.next_button, .prev_button
+		position: absolute
+		top: 46%
+		z-index: 11
+		cursor: pointer
+	.prev_button
+		left: 20px
+	.next_button
+		right: 20px	
+	.slide
+		.item
+			img
+				display: block
+				width: 100%
+				height: auto
+.info-event
+	margin-bottom: 15px
+	.info-event-button-group
+		width: 100%
+		margin: 5px 0
+		max-width: 294px
+		.btn
+			float: left
+			width: 150px
+			line-height: 52px
+			font-size: 18px
+		.grey_btn
+			border-bottom: 3px solid darken(#eee, 10%)
+			&:hover
+				border-bottom: 3px solid darken(#eee, 20%)				
+		.red_btn
+			border-bottom: 3px solid darken($acent-color, 10%)
+			&:hover
+				border-bottom: 3px solid darken($acent-color, 20%)			
+		.green_btn
+			border-bottom: 3px solid darken($main-color, 10%)
+			&:hover
+				border-bottom: 3px solid darken($main-color, 20%)
+		.like
+			float: right
+			cursor: pointer
+			width: 90px
+			height: 55px
+			border-bottom: 3px solid darken($main-color,10%)
+			margin-left: 5px
+			background-color: $main-color			
+			background-image: url("../img/like.png")
+			background-repeat: no-repeat
+			background-position: 15px center 
+			&:hover
+				background-color: darken($main-color,10%)
+				border-bottom: 3px solid darken($main-color,20%)
+			.number-info-event
+				line-height: 55px
+				color: #fff
+				font-family: "RobotoMedium", sans-serif
+				font-size: 18px
+				margin-left: 24px	
+	.type-event-wrap
+		text-align: center
+		.type-event
+			display: block
+			text-align: left
+			color: #525a60
+			font-family: "RobotoMedium", sans-serif
+			font-size: 16px
+		.Invite-friends
+			color: $main-color
+			&:hover
+				color: darken($main-color ,10%)
+	h4
+		font-family: "RobotoBold", sans-serif
+		font-size: 14px
+		background-color: $grey
+		width: 100%
+		color: #fff
+		padding: 5px
+		padding-left: 10px
+		padding-right: 0
+	.uzer-avatar
+		width: 68px
+		height: 68px
+		overflow: hidden
+		border-radius: 50%
+		background: #eee
+		margin: auto
+		img
+			max-width: 68px
+			min-height: 68px
+	.link-uzer-wrap-info-uzer
+		margin: 0
+		padding: 0
+		list-style-type: none
+	.link-uzer-info-uzer
+		text-align: center
+		padding: 0
+		a
+			color: $grey
+			font-size: 12px
+			&:hover
+				color: $acent-color									
+.form-comment, .form-dialog
+	position: relative
+	.text-comment
+		background: $grey
+		max-width: 100%
+		min-width: 100%
+		min-height: 57px
+		border: none
+		color: #fff
+		padding: 2px 60px 2px 35px
+		line-height: 17px
+		position: relative
+	.smile-comment
+		position: absolute
+		width: 21px
+		height: 21px
+		background-image: url("../img/smile-comment.png")
+		background-repeat: no-repeat
+		background-position: center
+		left: 5px
+		top: 4px
+		cursor: pointer
+	.comment-btn
+		position: absolute
+		bottom: 2px
+		right: 0
+		width: 57px
+		height: 57px
+		border: none
+		background-image: url("../img/coment-btn.png")
+		background-repeat: no-repeat	
+		background-position: center
+		background-color: $main-color
+		&:hover
+			background-color: darken($main-color, 10%)
+//------------- диалоги---------------------//
+.dialog-wrap
+	.top-dialog
+		background: #525a60
+		padding-left: 50px
+		margin-bottom: 0
+		position: relative
+		.foto-uzer
+			width: 37px
+			height: 37px
+			overflow: hidden
+			border-radius: 50%
+			border: 1px solid #fff
+			position: absolute
+			left: 7px
+			top: 7px
+			img
+				max-width: 37px
+				max-height: 37px
+		a
+			color: #fff
+			font-family: "RobotoMedium", sans-serif
+			font-size: 20px
+			font-weight: normal
+			line-height: 50px
+			position: relative
+			&:hover
+				color: $acent-color
+		.off-uzer
+			right: -14px
+			top: 12px	
+.dialog-list
+	background-color: #eee
+	min-height: 300px
+	height: 550px
+	overflow-y: auto
+	padding: 15px 10px
+	list-style-type: none
+	margin: 0	
+.top-dialog-content
+	.name-uzer
+		float: left
+		div
+			display: inline
+			position: relative
+			font-family: "RobotoMedium", sans-serif
+			font-size: 16px
+			color: $grey
+			padding-right: 10px
+		.off-uzer
+			right: 0px
+			top: 10px
+	.date-time-wrap
+		float: right
+		color: #b8b8b8
+		font-size: 12px
+		padding-top: 7px		
+		span
+			color: #b8b8b8
+			font-size: 12px
+.dialog
+	background-color: #fff
+	border-radius: 15px
+	position: relative
+	padding-left: 60px
+	padding-right: 10px
+	margin-bottom: 10px
+	.close-message	
+		position: absolute
+		bottom: 6px
+		left: 4px
+		color: #b8b8b8
+		z-index: 10
+		width: 24px
+		height: 24px
+		text-align: center
+		font-size: 16px
+		line-height: 20px
+		&:hover
+			color: #878787		
+	.foto-uzer
+		position: absolute
+		top: 5px
+		left: 5px	
+		border-radius: 50%
+		overflow: hidden
+		width: 41px
+		height: 41px
+		img
+			max-width: 41px
+			max-height: 41px
+	.short-description
+		padding: 10px 0
+		p
+			color: $grey
+			line-height: 18px
+			margin: 0			
+.dialog-uzer
+	.top-dialog-content
+		.name-uzer
+			div
+				color: $main-color
+.del-mes
+	color: #aeadad
+	margin-bottom: 10px
+	span
+		color: $main-color
+		cursor: pointer
+		&:hover
+			color: darken($main-color, 10%)									
+//-------------Создать событие--------------//
+.creat-event
+	margin-bottom: 10px
+	.type-event
+		margin: 5px 0
+	.field-event-coordinates
+		margin: 10px 0
+	.event-coordinates-wrap
+		width: 100%
+		height: 400px
+		background: $grey
+		margin: 5px 0
+	.TimePicker_wrap, .calendar_wrap
+		width: 180px
+		display: inline-block
+		input
+			margin: 0
+	.calendar_wrap
+		width: 225px
+		margin-right: 10px	
+	.btn
+		width: 215px
+		line-height: 60px
+		font-size: 18px
+		display: inline-block
+		border-bottom-width: 5px
+		position: relative
+		padding-right: 0
+		width: 220px
+		border-top: none
+		border-right: none
+		border-left: none		
+	.grey_btn
+		color: #949191
+	.load-img-wrap
+		margin-top: 10px
+		margin-bottom: 15px
+		.load-img-item-wrap
+			margin-bottom: 20px
+		.load-img-item
+			margin: auto
+			max-width: 300px
+			.load-img
+				width: 100%
+				height: 121px
+				background-position: center
+				background-size: cover
+		.remove_img
+			float: right
+			width: 40px
+			height: 40px
+			border: none
+			border-bottom: 3px solid #d5d3d3
+			background-color: #eee
+			margin-top: 5px
+			position: relative
+			&::before
+				content: url("../img/remove_img.png")
+				position: absolute
+				top: 10px
+				right: 14px
+			&:hover
+				background-color: darken(#eee, 10%)
+				border-bottom: 3px solid darken(#d5d3d3, 10%)	
+		.input-file
+			width: 128px
+			margin: 5px 0px 0 0
+			display: inline-block
+			.jq-file__browse
+				font-size: 14px
+				line-height: 37px
+				border-bottom: 3px solid darken($main-color, 10%)
+			&:hover .jq-file__browse
+				border-bottom: 3px solid darken($main-color, 20%)			
+
+/*-------------стиль кнопки выбора файла-----------*/
+.jq-file__name
+	display: none
+.jq-file__browse
+	position: relative
+	top: 0
+	right: 0	
+.input-file
+	border-radius: 0
+	.jq-file__browse
+		border: none
+		border-bottom: 4px solid darken($main-color, 10%)
+		border-radius: 0
+		box-shadow: none
+		background: $main-color
+		font: 18px/59px "RobotoMedium", sans-serif
+		color: #fff
+		text-shadow: none
+		text-align: center
+		padding: 0
+	&:hover .jq-file__browse
+		background: darken($main-color, 10%)
+		border-bottom: 4px solid darken($main-color, 20%)																		
+
+
+//.slideout-menu 
+//	position: fixed
+//	left: 0
+//	top: 0
+//	bottom: 0
+//	right: 0
+//	z-index: 0
+//	width: 256px
+//	overflow-y: auto
+//	-webkit-overflow-scrolling: touch
+//	display: none
+//
+//
+//.slideout-panel 
+//	position: relative
+//	z-index: 100
+//
+//
+//.slideout-open,
+//.slideout-open body,
+//.slideout-open .slideout-panel 
+//	overflow: hidden
+//
+//
+//.slideout-open .slideout-menu 
+//	display: block									
